@@ -1,0 +1,147 @@
+﻿
+CURRENT VERSION: v22
+
+v22 - don't know about you
+-backpack - now compatible with the tradeup contract thingy
+
+v21 - rated r for "really gr8"
+
+-scoreboard - fixed the challenge coin popping in and out of existence
+-spectator - fixed, now at the bottom of the screen
+-freezepanel - fixed?
+-backpack - font changed and gun mettle collection items fixed
+
+v20 - summertime badness 
+-clientscheme fucking bullshit 
+-the stock backpack gui now has item quality borders instead of a solid color background gui. this hud now does to. rad 
+-hq item icons 
+-fixed the green on the scoreboard. you know which one 
+-made the lobby panels delicious medhud flavor instead of delectable rayshud flavor 
+-the spectator names
+
+v19 - shit, i don't even play this game 
+-fixed for the gunmettle update?? 
+-the hud's blue now (you can make it whatever you want, go to the clientscheme and change "button color" to whatever color you want) 
+-bottom uber bar was broken, now it's gone. less problems! 
+-the background for the main menu only is grey now (no options) to aesthetically agree with more colors
+
+v18- xXxSexyNoidxXx
+-New loadout menu. whoa.
+-Uber % way more visible
+-Practical taunt menu (you aren't blind when you use it)
+-Damage numbers outlined and last in the air for 20% less time
+-Will probably be broken next update. shoutout to valve
+
+v17 - Tanzkönigin
+-Redid Uber with Bar/No bar, inspired from ToonHUD
+-Winpanel matches rest of HUD and has highest killstreak
+-Made smaller CP points
+-Centered bottom Timer in small 16:10 resolutions
+-Removed support of enemy Uber Bar
+
+v16 - now legal in 31 states!
+-Gave the HUD breathing room; not as cluttered, more spaced out
+-Reverted the Zim points to normal position
+-Softened color scheme
+-Removed black bounding boxes in Spec UI
+-No Uber bar is default
+-Minimal scoreboard is default
+-Removed enemy Uber bar
+
+v15 - volvo use the beta pls
+-Redid TargetIDs
+-Reimplemented Zim's control point icons, positioned them similarly to Smaka's
+-Added damage to pub scoreboard
+-Added Parachute icon
+-Cross TargetID is now default
+
+v14  - med took 19
+-Fixed HUD for Love & War Update
+-Blue for overheal? Let me know what you think!
+-Removed black crosshair dot being on by defualt
+-Energy background is default
+-Plain TargetID is default
+
+v13 - bread soon
+-Bar for enemy uber thing is now able to be disabled for real now. If you want an alternative, I recommend Admirable's one http://teamfortress.tv/thread/17883/uber-tracking-hud-mod/?page=2#41
+-Rad Vaccinator HUD, fixed and stuff
+-Eureka Effect HUD fixed
+-A purple and black source scheme (HL menus)
+Does anything need to be fixed? Let me know as soon as possible!
+
+v12 - Dodec the Halls
+-NEW OPTION: Enemy Uber tracker courtesy of martijntje for making it and unii for showing me!
+-NEW OPTION: Chat position
+-Zim control points
+-Damage account colors in ClientScheme
+-DoTA 2 quality colors (they are brighter and look better)
+
+v11 - Updates Are Cool
+-NEW OPTION: Health cross TargetIDs
+-NEW OPTION: Killfeed position
+-Added boxes around control point icons
+-Enlarged damage numbers and damage account
+-Made Pub scoreboard default
+-Made ClientScheme more user friendly (?)
+-Fixed off-centred TargetIDs
+-Probably fixed something else idk
+
+v10 - Zweistellig
+-NEW OPTION: Goat or Plain Target IDs
+-NEW OPTION: No ubercharge meter, just the percent number
+-NEW OPTION: Options for backgrounds
+-Added preview images for 4Plug options, I figured out how that works
+-Damage numbers can be edited in ClientScheme.res
+-Replaced bottom server timer with within-health cross timer
+-Pub Scoreboard for 6's now has stats that are relevant
+-Fixed placement for "Highlander Mode" text
+
+v9 - four is the greatest
+-NEW OPTION: Bottom server timer
+-Added more 4Plug functionality; installation of 4Plug is needed for ease of option choosing
+
+v8 - could've had a 
+-github makes my life hard
+-Added hurt and buff animations
+-Optimized spec HUD in 4:3
+-Added stats to 32 player scoreboard
+-Added voting to main menu ingame
+-Added server name to scoreboard
+
+v7 - make good decisions today, kids
+-NEW OPTION: Bottom uber bar
+-NEW OPTION: Removal of red directional damage lines
+-Made damage numbers larger and gave them color
+-Fixed spectator health animations
+-Advice
+
+v6 - bowswer5
+-Included avatars in pub scoreboard and widened it
+-Colored in team labels on scoreboard
+-Damage numbers last 17% shorter
+-Fixed "y"'s and "g"'s hanging off killfeed
+-Main menu now accurately says "medHUD"
+-bowswer <3
+
+v5 - "25 25 25 255"
+-Made Uber bar stand out more
+-Fixed 5, 25, 50, and 75 tick marks
+-Made the Tournament Spectate better, not fixed for non-16:9 resolutions yet, will fix later
+-Fixed health animations
+
+v4 - lol pubs
+-NEW OPTION: Added pub scoreboard with Kills/Assists/Deaths/Heals and 32 player scoreboard in minmode 0
+-Evened out spacing in scoreboard panels
+-Made a more faithful team selection menu
+-I forgot to change the main menu in v3 for the update lol im so bad
+
+v3 - Shoutout to 4:3
+-Fixed 4:3 incompatibility; let me know if anything is off center
+
+v2 - Baby's First Patch
+-Made a console toggle button
+-Made a viewmodel toggle button 
+-Improved playercount readability
+
+v1 - The Dream is Real
+-Initial release, let's go!
