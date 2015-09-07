@@ -1,0 +1,77 @@
+ApiVersion=1.0
+
+[BG:#EEEEEE]
+Window();
+
+[Border:1, BG:#DDDDDD, FG:#000000]
+Banner("medHUD.png", auto, normal);
+
+[Name:Background, Default:Gray]
+GlobalComboBox("Background", "Background")
+{
+    Energy
+    Gray
+}
+    
+#if Background == "Energy"
+{
+    Copy("materials\console\background_upward - Energy.vtf", "materials\console\background_upward.vtf");
+    Copy("materials\console\background_upward2 - Energy.vtf", "materials\console\background_upward2.vtf"");
+    Copy("materials\console\background_upward_widescreen - Energy.vtf", "materials\console\background_upward_widescreen.vtf"");
+    Copy("materials\console\background_upward_widescreen2 - Energy.vtf", "materials\console\background_upward_widescreen2.vtf"");
+}
+#if Background == "Gray"
+{
+    Copy("materials\console\background_upward - Gray.vtf", "materials\console\background_upward.vtf");
+    Copy("materials\console\background_upward2 - Gray.vtf", "materials\console\background_upward2.vtf"");
+    Copy("materials\console\background_upward_widescreen - Gray.vtf", "materials\console\background_upward_widescreen.vtf"");
+    Copy("materials\console\background_upward_widescreen2 - Gray.vtf", "materials\console\background_upward_widescreen2.vtf"");
+}
+
+[Name:Target ID, Default:Cross]
+GlobalComboBox("Target ID", "Target ID")
+{
+        Plain
+        Cross
+        Goat
+}
+
+#if Target ID == "Plain"
+{
+    Copy("resource\ui\TargetID - Plain.res", "resource\ui\TargetID.res");
+    Copy("resource\ui\SpectatorGUIHealth - Plain.res", "resource\ui\SpectatorGUIHealth.res");
+} 
+
+#if Target ID == "Cross"
+{
+    Copy("resource\ui\TargetID - Cross.res", "resource\ui\TargetID.res");
+    Copy("resource\ui\SpectatorGUIHealth - Cross.res", "resource\ui\SpectatorGUIHealth.res");
+}   
+
+#if Target ID == "Goat"
+{
+    Copy("resource\ui\TargetID - Goat.res", "resource\ui\TargetID.res");
+    Copy("resource\ui\SpectatorGUIHealth - Goat.res", "resource\ui\SpectatorGUIHealth.res");
+}   
+
+[Portion:2]
+[Name:Chat, Default:Upper]
+DynamicFileSwitcher("resource\ui\BaseChat.res", "Chat");
+
+[Portion:1]
+[Name:Scoreboard, Default:Pub]
+DynamicFileSwitcher("resource\ui\ScoreBoard.res", "Scoreboard", 1);
+
+[Portion:1]
+[Name:Über Bar, Default:No Bar]
+DynamicFileSwitcher("resource\ui\HudMedicCharge.res", "Über Bar", 1);
+
+[Portion:2]
+[Name:Server Time, Default:Default]
+DynamicFileSwitcher("resource\ui\HudObjectiveTimePanel.res", "Server Time", 1);
+
+
+
+
+
+
