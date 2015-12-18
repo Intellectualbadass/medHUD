@@ -32,11 +32,10 @@
 
         "NavToRelay"            "BackButton2"
     }
-    
-    "BackgroundHeader"
+    "BackgroundHeader2"
     {
         "ControlName"   "ImagePanel"
-        "fieldName"     "BackgroundHeader"
+        "fieldName"     "BackgroundHeader2"
         "xpos"          "0"
         "ypos"          "0"
         "zpos"          "-2"
@@ -44,21 +43,21 @@
         "tall"          "120"
         "visible"       "1"
         "enabled"       "1"
-        "image"         "../console/background_upward"
+        "fillcolor"     "15 15 15 175"
         "tileImage"     "1"
-    }
-"BackgroundFooter"
+    }           
+    "BackgroundFooter2"
     {
         "ControlName"   "ImagePanel"
-        "fieldName"     "BackgroundFooter"
+        "fieldName"     "BackgroundFooter2"
         "xpos"          "0"
         "ypos"          "420"
-        "zpos"          "0"
+        "zpos"          "1"
         "wide"          "f0"
         "tall"          "60"
         "visible"       "1"
         "enabled"       "1"
-        "image"         "../console/background_upward"
+        "fillcolor"     "15 15 15 220"
         "tileImage"     "1"
     }
     "FooterLine"
@@ -456,66 +455,6 @@
             "wrap"          "1"
         }
     }
-    
-    "PlayWithFriendsExplanationCompetitive"
-    {
-        "ControlName"   "EditablePanel"
-        "fieldName"     "PlayWithFriendsExplanationCompetitive"
-        "xpos"          "c+100"
-        "ypos"          "62"
-        "zpos"          "8"
-        "wide"          "200"
-        "tall"          "285"
-        "PaintBackgroundType"   "0"
-        "paintbackground"       "1"
-        "bgcolor_override"  "0 0 0 200"
-        "border"        "QuickplayBorder"
-
-        "PlayWithFriendsCompetitiveExplanationTitle"
-        {
-            "ControlName"   "CExLabel"
-            "fieldName"     "PlayWithFriendsCompetitiveExplanationTitle"
-            "font"          "HudFontSmallBold"
-            "labelText"     "#TF_Matchmaking_PlayWithFriends"
-            "textAlignment" "center"
-            "xpos"          "0"
-            "ypos"          "0"
-            "zpos"          "10"
-            "wide"          "200"
-            "tall"          "32"
-        }
-
-        "FriendsImage"
-        {
-            "ControlName"   "ImagePanel"
-            "fieldName"     "FriendsImage"
-            "xpos"          "10"
-            "ypos"          "32"
-            "zpos"          "0"
-            "wide"          "180"
-            "tall"          "90"
-            "visible"       "1"
-            "enabled"       "1"
-            "image"         "pve/mvm_friends_image"
-            "scaleImage"    "0"
-        }
-
-        "PlayWithFriendsCompetitiveExplanationLabel"
-        {
-            "ControlName"   "CExLabel"
-            "fieldName"     "PlayWithFriendsCompetitiveExplanationLabel"
-            "font"          "HudFontSmall"
-            "labelText"     "#TF_Matchmaking_CompetitiveExplanation"
-            "textAlignment" "north-west"
-            "xpos"          "10"
-            "ypos"          "130"
-            "zpos"          "10"
-            "wide"          "180"
-            "tall"          "150"
-            "wrap"          "1"
-        }
-    }
-
 
     "StartPartyButton"
     {
@@ -538,6 +477,13 @@
         "dulltext"      "0"
         "brighttext"    "0"
         "Command"       "start_party"
+        
+        if_competitive
+        {
+            "xpos"          "c+120"
+            "ypos"          "375"
+        }
+
 
         "NavUp"         "Sheet"
         "NavDown"       "NextButton"

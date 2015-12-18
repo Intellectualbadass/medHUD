@@ -1,5 +1,12 @@
 ﻿
-CURRENT VERSION: v22
+CURRENT VERSION: v24
+
+v24 - crossbow building?? vaxx is good??
+-menus - fixed for tough break
+-menus - fixed mvm lobby
+
+v23 - sad tool
+-menus - fixed for halloween
 
 v22 - don't know about you
 -backpack - now compatible with the tradeup contract thingy
