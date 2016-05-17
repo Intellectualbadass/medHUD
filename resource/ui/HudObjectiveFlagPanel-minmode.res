@@ -9,8 +9,8 @@
 		"zpos"				"1"
 		"wide"				"f0"
 		"tall"				"480"
-		"visible"			"1"
-		"enabled"			"1"
+		"visible"			"0"
+		"enabled"			"0"
 		
 		"if_hybrid"
 		{
@@ -23,12 +23,12 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"LeftSideBG"
 		"xpos"			"c-120"
-		"ypos"			"r20"	
+		"ypos"			"r30"	
 		"zpos"			"-1"
 		"wide"			"120"
-		"tall"			"14"
-		"visible"		"1"
-		"enabled"		"1"
+		"tall"			"100"
+		"visible"		"0"
+		"enabled"		"0"
 		"fillcolor"		"70 130 180 153"
 		"scaleImage"	"1"	
 		
@@ -53,13 +53,13 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"RightSideBG"
 		"xpos"			"c0"
-		"ypos"			"r20"	[$WIN32]
+		"ypos"			"r30"	[$WIN32]
 		"zpos"			"-1"
 		"wide"			"120"
-		"tall"			"14"
-		"visible"		"1"
-		"enabled"		"1"
-		"fillcolor"		"205 50 50 153"
+		"tall"			"100"
+		"visible"		"0"
+		"enabled"		"0"
+		"fillcolor"		"205 92 92 153"
 		"scaleImage"	"1"	
 		
 		"if_hybrid"
@@ -155,7 +155,7 @@
 		"textAlignment"	"east"	
 		"labelText"		"%bluescore%"
 		"font"			"Cerbetica40"
-		"fgcolor"		"Black"
+		"fgcolor"		"70 130 180 153"
 		
 		"if_hybrid"
 		{
@@ -219,7 +219,7 @@
 		"textAlignment"	"west"	
 		"labelText"		"%redscore%"
 		"font"			"Cerbetica40"
-		"fgcolor"		"Black"		
+		"fgcolor"		"205 50 50 153"		
 		
 		"if_hybrid"
 		{
@@ -316,14 +316,14 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayingToBG"
-		"xpos"			"c-50"	[$WIN32]
-		"ypos"			"r50"	[$WIN32]
+		"xpos"			"9999"	[$WIN32]
+		"ypos"			"9999"	[$WIN32]
 		"zpos"			"3"
 		"wide"			"100"	[$WIN32]
 		"tall"			"20"	[$WIN32]
-		"visible"		"1"
-		"enabled"		"1"
-		"fillcolor"		"0 0 0 0"
+		"visible"		"0"
+		"enabled"		"0"
+		"fillcolor"		"0 0 0 100"
 		"scaleImage"	"1"	
 		
 		"if_hybrid"
@@ -444,38 +444,6 @@
 			"ypos"		"r100"
 		}
 	}
-	
-	"PoisonIcon"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"PoisonIcon"
-		"xpos"			"cs-0.5"
-		"ypos"			"r75"
-		"zpos"			"6"
-		"wide"			"40"
-		"tall"			"o1"
-		"visible"		"0"
-		"enabled"		"1"
-		"image"			"marked_for_death"
-		"scaleImage"	"1"
-	}
-
-	"PoisonTimeLabel"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"PoisonTimeLabel"
-		"xpos"			"cs-0.5"
-		"ypos"			"r65"
-		"zpos"			"6"
-		"wide"			"40"
-		"tall"			"20"
-		"visible"		"0"
-		"enabled"		"1"
-		"textAlignment"	"center"	
-		"labelText"		"%redscore%"
-		"font"			"HudFontMediumBold"
-		"fgcolor"		"TanLight"
-	}	
 	
 	"SpecCarriedImage"
 	{

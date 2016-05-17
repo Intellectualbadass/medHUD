@@ -1073,584 +1073,794 @@ event RespecEarnedPulseEnd
 // Respec on Loss
 event RespecEarnedPulseLoss
 {
-    Animate RespecTextLabelLoss FgColor "TanLight"      Linear 0.0 0.1
-    Animate RespecTextLabelLoss FgColor "RedSolid"      Linear 0.3 0.4
-    
-    RunEvent RespecEarnedPulseLoopLoss      0.5
+	Animate	RespecTextLabelLoss	FgColor	"TanLight"		Linear 0.0 0.1
+	Animate	RespecTextLabelLoss	FgColor	"RedSolid"		Linear 0.3 0.4
+	
+	RunEvent RespecEarnedPulseLoopLoss		0.5
 }
 
 event RespecEarnedPulseLoopLoss
 {
-    RunEvent RespecEarnedPulseLoss          0.0
+	RunEvent RespecEarnedPulseLoss			0.0
 }
 
 event RespecEarnedPulseEndLoss
 {
-    Animate RespecTextLabelLoss FgColor     "TanLight"      Linear 0.0 0.1
-    Animate RespecTextLabelLoss FgColor     "TanLight"      Linear 0.0 0.1
-    
-    StopEvent RespecEarnedPulseLoss     0.0
-    StopEvent RespecEarnedPulseLoopLoss 0.0
+	Animate	RespecTextLabelLoss FgColor		"TanLight"		Linear 0.0 0.1
+	Animate	RespecTextLabelLoss FgColor		"TanLight"		Linear 0.0 0.1
+	
+	StopEvent RespecEarnedPulseLoss		0.0
+	StopEvent RespecEarnedPulseLoopLoss	0.0
 }
 
 event RDPositiveScorePulse
 {
-    Animate Score FgColor   "25 255 25 255"     Linear 0.0 0.0
-    Animate Score FgColor   "TanLight"          Linear 0.1 0.2
+	Animate Score FgColor	"25 255 25 255"		Linear 0.0 0.0
+	Animate Score FgColor	"TanLight"			Linear 0.1 0.2
 
-    Animate Score Position  "3 5"       Deaccel 0.0 0.05
-    Animate Score Position  "3 10"      Accel 0.05 0.2
+	Animate Score Position	"3 5"		Deaccel 0.0 0.05
+	Animate Score Position	"3 10"		Accel 0.05 0.2
 
-    Animate ScoreShadow FgColor "0 0 0 200"     Deaccel 0.0 0.05
-    Animate ScoreShadow FgColor "0 0 0 255"     Accel 0.1 0.2
+	Animate ScoreShadow FgColor	"0 0 0 200"		Deaccel 0.0 0.05
+	Animate ScoreShadow FgColor	"0 0 0 255"		Accel 0.1 0.2
 }
 
 event RDNegativeScorePulse
 {
-    Animate Score FgColor   "255 75 75 255"     Linear 0.0 0.0
-    Animate Score FgColor   "TanLight"          Linear 0.1 0.2
+	Animate Score FgColor	"255 75 75 255"		Linear 0.0 0.0
+	Animate Score FgColor	"TanLight"			Linear 0.1 0.2
 
-    Animate Score Position  "3 5"       Deaccel 0.0 0.05
-    Animate Score Position  "3 10"      Accel 0.05 0.2
+	Animate Score Position	"3 5"		Deaccel 0.0 0.05
+	Animate Score Position	"3 10"		Accel 0.05 0.2
 
-    Animate ScoreShadow FgColor "0 0 0 200"     Deaccel 0.0 0.05
-    Animate ScoreShadow FgColor "0 0 0 255"     Accel 0.1 0.2
+	Animate ScoreShadow FgColor	"0 0 0 200"		Deaccel 0.0 0.05
+	Animate ScoreShadow FgColor	"0 0 0 255"		Accel 0.1 0.2
 }
-
 
 event QuestNotification_Present
 {
-    Animate MainContainer Position  "r0 94"     Deaccel 0       0
-    Animate MainContainer Position  "r115 94"       Deaccel 0.01    0.4
+	Animate MainContainer Position	"r0 94"		Deaccel 0		0
+	Animate MainContainer Position	"r115 94"		Deaccel	0.01	0.4
 }
 
 event QuestNotification_Hide
 {
-    Animate MainContainer Position  "r115 94"       Deaccel 0       0
-    Animate MainContainer Position  "r0 94"     Deaccel 0.01    0.4
+	Animate MainContainer Position	"r115 94"		Deaccel	0		0
+	Animate MainContainer Position	"r0 94"		Deaccel 0.01	0.4
 }
 
 event ItemCard_ShowPinHint
 {
-    Animate PinLabel Position   "0 -20" Deaccel 0   0
+	Animate PinLabel Position	"0 -20"	Deaccel	0	0
 
-    Animate PinLabel FgColor    "TanLight"  Linear 0.2 0
-    Animate PinLabel Position   "0 0"   Deaccel 0.2 0.2
+	Animate PinLabel FgColor	"TanLight"	Linear 0.2 0
+	Animate PinLabel Position	"0 0"	Deaccel 0.2	0.2
 }
 
 event ItemCard_HidePinHint
 {
-    Animate PinLabel Position   "0 5"   Deaccel 0   0.3
+	Animate PinLabel Position	"0 5"	Deaccel	0	0.3
 
-    Animate PinLabel Position   "0 -20" Accel 0.3   0.1
+	Animate PinLabel Position	"0 -20"	Accel 0.3	0.1
 }
 
 event ItemCard_ShowCloseButton
 {
-    Animate CloseButton Position    "-8 -68"    Deaccel 0   0.3
+	Animate CloseButton Position	"-8 -68"	Deaccel	0	0.3
 
-    Animate CloseButton Position    "-8 -68"    Accel 0.3   0.1
+	Animate CloseButton Position	"-8 -68"	Accel 0.3	0.1
 }
 
 event ItemCard_HideCloseButton
 {
-    Animate CloseButton Position    "-30 -90"   Deaccel 0   0.0
+	Animate CloseButton Position	"-30 -90"	Deaccel	0	0.0
 }
 
 event QuestItem_StaticPhoto_Reveal
 {
-    Animate StaticPhoto Alpha   "0" Accel       0   2
+	Animate StaticPhoto Alpha	"0"	Accel		0	2
 }
 
 event HideStamp
 {
-    SetVisible ApplyStampButton     0                   0
+	SetVisible ApplyStampButton		0					0
 }
 
 event CollectionCrafting_Intro
 {
-    // Reset
-    SetVisible ApplyStampButton     0                   0
-    SetVisible Stamp                0                   0
-    Animate Stamp                   xpos c140   Accel   0 0
-    Animate DrawingPanel            xpos c0     Accel   0 0
-    Animate DrawingPanel            wide 0      Accel   0 0
-    Animate LetterFront             xpos c0     Accel   0 0
-    Animate LetterFront             wide 0      Accel   0 0
-    Animate LetterBack_Top      xpos c-250  Accel   0 0
-    Animate LetterBack_Top      ypos 400    Accel   0 0
-    Animate LetterBack_Top      wide 500    Accel   0 0
-    Animate LetterBack_Bottom       xpos c-250  Accel   0 0
-    Animate LetterBack_Bottom       ypos 400    Accel   0 0
-    Animate LetterBack_Bottom       wide 500    Accel   0 0
-    Animate LetterBack_Flap         xpos c-250  Accel   0 0
-    Animate LetterBack_Flap         ypos 400    Accel   0 0
-    Animate LetterBack_Flap         wide 500    Accel   0 0
-    Animate LetterBack_Flap         tall 0      Deaccel 0.6 0.4
-    Animate LetterBack_Top          ypos 400    Accel   0 0
-    SetVisible ReturnModel          0                   0
-    Animate SendEvelopeButton       ypos 280    Accel   0 0
-    SetVisible  SendEvelopeButton        0              0 
-    SetVisible ResponseTimeout      0                   0
-    SetVisible WaitingForResponse   0                   0
+	// Reset
+	SetVisible ApplyStampButton		0					0
+	SetVisible Stamp				0					0
+	Animate Stamp					xpos c140	Accel	0 0
+	Animate DrawingPanel			xpos c0		Accel	0 0
+	Animate DrawingPanel			wide 0		Accel	0 0
+	Animate LetterFront				xpos c0		Accel	0 0
+	Animate LetterFront				wide 0		Accel	0 0
+	Animate LetterBack_Top		xpos c-250	Accel	0 0
+	Animate LetterBack_Top		ypos 400	Accel	0 0
+	Animate LetterBack_Top		wide 500	Accel	0 0
+	Animate LetterBack_Bottom		xpos c-250	Accel	0 0
+	Animate LetterBack_Bottom		ypos 400	Accel	0 0
+	Animate LetterBack_Bottom		wide 500	Accel	0 0
+	Animate LetterBack_Flap			xpos c-250	Accel	0 0
+	Animate LetterBack_Flap			ypos 400	Accel	0 0
+	Animate LetterBack_Flap			wide 500	Accel	0 0
+	Animate LetterBack_Flap			tall 0		Deaccel 0.6 0.4
+	Animate LetterBack_Top			ypos 400	Accel	0 0
+	SetVisible ReturnModel			0					0
+	Animate SendEvelopeButton		ypos 280	Accel	0 0
+	SetVisible	SendEvelopeButton		 0				0 
+	SetVisible ResponseTimeout		0					0
+	SetVisible WaitingForResponse	0					0
 
-    SetVisible ShowExplanationsButton1          1                   0
-    SetVisible ShowExplanationsButton2          0                   0
-    Animate TradeUpContainer    wide 800    Accel 0 0   
+	SetVisible ShowExplanationsButton1			1					0
+	SetVisible ShowExplanationsButton2			0					0
+	Animate TradeUpContainer	wide 800	Accel 0 0	
 
-    // Slide paper down
-    Animate TradeUpContainer Position   "0 60"  Deaccel 0   0.3
+	// Slide paper down
+	Animate TradeUpContainer Position	"0 60"	Deaccel	0	0.3
 
-    // Slider BG up
-    Animate BG          Position    "0 34"  Deaccel 0   0.3
+	// Slider BG up
+	Animate BG			Position	"0 34"	Deaccel	0	0.3
 
-    // Fade dimmer down
-    Animate Dimmer Alpha "255" Linear 0 0.4
+	// Fade dimmer down
+	Animate Dimmer Alpha "255" Linear 0 0.4
 }
 
 event CollectionCrafting_LetterStart
 {
-    // Slide envelope up
-    FireCommand 0.0 "playsound ui/trade_up_envelope_slide_in.wav"
-    Animate LetterBack_Bottom   ypos 60 Deaccel 0 0.3
-    Animate LetterBack_Flap     ypos 60 Deaccel 0 0.3
-    Animate LetterBack_Top      ypos 60 Deaccel 0 0.3
-    SetVisible ShowExplanationsButton1  0       0
+	// Slide envelope up
+	FireCommand	0.0 "playsound ui/trade_up_envelope_slide_in.wav"
+	Animate LetterBack_Bottom	ypos 60	Deaccel 0 0.3
+	Animate LetterBack_Flap		ypos 60	Deaccel 0 0.3
+	Animate LetterBack_Top		ypos 60	Deaccel 0 0.3
+	SetVisible ShowExplanationsButton1	0		0
 
-    // Close flap
-    FireCommand 0.3 "playsound ui/trade_up_envelope_fold.wav"
-    Animate LetterBack_Flap     tall 250 Deaccel 0.4 0.2
-    
-    // Start Flip
-    FireCommand 0.8 "playsound ui/trade_up_envelope_spin.wav"
-    Animate TradeUpContainer    wide 0  Accel 0.8 0 
-    Animate LetterBack_Bottom   wide 0  Accel 0.8 0.2
-    Animate LetterBack_Bottom   xpos c0 Accel 0.8 0.2
-    Animate LetterBack_Flap     wide 0  Accel 0.8 0.2
-    Animate LetterBack_Flap     xpos c0 Accel 0.8 0.2
-    Animate LetterBack_Top      wide 0  Accel 0.8 0.2
-    Animate LetterBack_Top      xpos c0 Accel 0.8 0.2
-    
-    // End Flips
-    Animate LetterFront         xpos c-250  Deaccel 1.0 0.2
-    Animate LetterFront         wide 500    Deaccel 1.0 0.2
-    Animate DrawingPanel        xpos c-250  Deaccel 1.0 0.2
-    Animate DrawingPanel        wide 500    Deaccel 1.0 0.2
-    SetVisible ApplyStampButton 1                   1.3
-    SetVisible ShowExplanationsButton2  1           1.3
+	// Close flap
+	FireCommand	0.3 "playsound ui/trade_up_envelope_fold.wav"
+	Animate LetterBack_Flap		tall 250 Deaccel 0.4 0.2
+	
+	// Start Flip
+	FireCommand	0.8 "playsound ui/trade_up_envelope_spin.wav"
+	Animate TradeUpContainer	wide 0	Accel 0.8 0	
+	Animate LetterBack_Bottom	wide 0	Accel 0.8 0.2
+	Animate LetterBack_Bottom	xpos c0	Accel 0.8 0.2
+	Animate LetterBack_Flap		wide 0	Accel 0.8 0.2
+	Animate LetterBack_Flap		xpos c0	Accel 0.8 0.2
+	Animate LetterBack_Top		wide 0	Accel 0.8 0.2
+	Animate LetterBack_Top		xpos c0	Accel 0.8 0.2
+	
+	// End Flips
+	Animate LetterFront			xpos c-250	Deaccel 1.0 0.2
+	Animate LetterFront			wide 500	Deaccel 1.0 0.2
+	Animate DrawingPanel		xpos c-250	Deaccel 1.0 0.2
+	Animate DrawingPanel		wide 500	Deaccel 1.0 0.2
+	SetVisible ApplyStampButton	1					1.3
+	SetVisible ShowExplanationsButton2	1			1.3
 }
 
 event CollectionCrafting_PlaceStamp
 {
-    SetVisible Stamp                1                   0
-    SetVisible ApplyStampButton     0                   0
-    FireCommand 0 "playsound ui/trade_up_apply_stamp.wav"
+	SetVisible Stamp				1					0
+	SetVisible ApplyStampButton		0					0
+	FireCommand	0 "playsound ui/trade_up_apply_stamp.wav"
 }
 
 event CollectionCrafting_LetterSend
 {
-    SetVisible ShowExplanationsButton2  0           0
-    SetVisible  SendEvelopeButton       0           0 
-    Animate Stamp               xpos    c70 Deaccel 0 0.3
-    Animate LetterFront         xpos    c-320   Deaccel 0 0.3
-    Animate DrawingPanel        xpos    c-320   Deaccel 0 0.3
+	SetVisible ShowExplanationsButton2	0			0
+	SetVisible	SendEvelopeButton		0			0 
+	Animate Stamp				xpos	c70	Deaccel	0 0.3
+	Animate LetterFront			xpos	c-320	Deaccel 0 0.3
+	Animate DrawingPanel		xpos	c-320	Deaccel 0 0.3
 
-    RunEventChild BehindItemParticlePanel PlayEnvelopSendParticles 0.3
-    Animate Stamp               xpos 1120   Accel 0.3 0.2
-    Animate LetterFront         xpos 1000   Accel 0.3 0.2
-    Animate DrawingPanel        xpos 1000   Accel 0.3 0.2
-    SetVisible CloseButton      0                   0
-    FireCommand 0.2 "playsound ui/trade_up_envelope_slide_out.wav"
+	RunEventChild BehindItemParticlePanel PlayEnvelopSendParticles 0.3
+	Animate Stamp				xpos 1120	Accel 0.3 0.2
+	Animate LetterFront			xpos 1000	Accel 0.3 0.2
+	Animate DrawingPanel		xpos 1000	Accel 0.3 0.2
+	SetVisible CloseButton		0					0
+	FireCommand	0.2 "playsound ui/trade_up_envelope_slide_out.wav"
 }
 
 event PlayNewItemParticles
 {
-    FireCommand 0 "start0"
+	FireCommand 0 "start0"
 }
 
 event PlayCrateSmashParticles
 {
-    FireCommand 0 "start1"
+	FireCommand 0 "start1"
 }
 
 event PlayEnvelopSendParticles
 {
-    FireCommand 0 "start2"
+	FireCommand 0 "start2"
 }
 
 event ShowFoundLabels
 {
-    Animate YouTradedForLabel alpha 0 Linear 0 0
-    Animate ItemName        alpha 0 Linear 0 0
+	Animate YouTradedForLabel alpha 0 Linear 0 0
+	Animate ItemName		alpha 0 Linear 0 0
 
-    Animate YouTradedForLabel alpha 255 Linear 3 1
-    Animate ItemName        alpha 255 Linear 3 1
+	Animate YouTradedForLabel alpha 255 Linear 3 1
+	Animate ItemName		alpha 255 Linear 3 1
 }
 
 event CollectionCrafting_ItemRecieved
 {
-    RunEventChild NewItemPanel ShowFoundLabels  0
-    FireCommand 0   "playcratesequence1"
-    SetVisible  NewItemPanel                    0 0 
-    SetVisible ReturnModel                      1 0.05
-    RunEventChild BehindItemParticlePanel PlayCrateSmashParticles 0.2
+	RunEventChild NewItemPanel ShowFoundLabels	0
+	FireCommand 0	"playcratesequence1"
+	SetVisible	NewItemPanel					0 0 
+	SetVisible ReturnModel						1 0.05
+	RunEventChild BehindItemParticlePanel PlayCrateSmashParticles 0.2
 
-    FireCommand 0 "playsound ui/trade_up_crate_smash.wav"
+	FireCommand	0 "playsound ui/trade_up_crate_smash.wav"
 
-    SetVisible  NewItemPanel      1         1.5 
-    SetVisible CloseButton        1         1.5
+	SetVisible	NewItemPanel	  1			1.5 
+	SetVisible CloseButton		  1			1.5
 
-    FireCommand 2.1 "playcratesequence2"
-    RunEventChild BehindItemParticlePanel PlayNewItemParticles 1.5
-    
-    FireCommand 1.0 "playsound ../player/taunt_medic_heroic.wav"
+	FireCommand 2.1 "playcratesequence2"
+	RunEventChild BehindItemParticlePanel PlayNewItemParticles 1.5
+	
+	FireCommand	1.0 "playsound ../player/taunt_medic_heroic.wav"
 }
 
 event CollectionCrafting_OKBlink_Repeatable
 {
-    Animate OkButton    FgColor Red      Linear 0 0.1
-    Animate OkButton    FgColor TanLight Linear 0.1 0.1
+	Animate OkButton	FgColor Red		 Linear 0 0.1
+	Animate OkButton	FgColor TanLight Linear 0.1 0.1
 }
 
 event CollectionCrafting_OKBlink
 {
-    RunEvent CollectionCrafting_OKBlink_Repeatable 0
-    RunEvent CollectionCrafting_OKBlink_Repeatable 0.2
-    RunEvent CollectionCrafting_OKBlink_Repeatable 0.4
-    RunEvent CollectionCrafting_OKBlink_Repeatable 0.6
+	RunEvent CollectionCrafting_OKBlink_Repeatable 0
+	RunEvent CollectionCrafting_OKBlink_Repeatable 0.2
+	RunEvent CollectionCrafting_OKBlink_Repeatable 0.4
+	RunEvent CollectionCrafting_OKBlink_Repeatable 0.6
 }
 
 
 event CollectionCrafting_ShowSendButton
 {
-    SetVisible  SendEvelopeButton     1                 0 
-    Animate SendEvelopeButton       ypos    320 Deaccel 0 0.5
+	SetVisible	SendEvelopeButton	  1					0 
+	Animate SendEvelopeButton		ypos	320 Deaccel 0 0.5
 }
 
 event CollectionCrafting_ShowWaiting
 {
-    SetVisible WaitingForResponse   1   0
+	SetVisible WaitingForResponse	1	0
 }
 
 event CollectionCrafting_HideWaiting
 {
-    SetVisible WaitingForResponse   0   0
+	SetVisible WaitingForResponse	0	0
 }
 
 event CollectionCrafting_ShowFailure
 {
-    SetVisible ResponseTimeout  1   0
-    SetVisible CloseButton      1   0
+	SetVisible ResponseTimeout	1	0
+	SetVisible CloseButton		1	0
 }
 
 event CollectionCrafting_WaitForItemsOnly
 {
-    // Set Everything Invisible
-    SetVisible ReturnModel          0                   0
-    SetVisible  SendEvelopeButton        0              0 
-    SetVisible ResponseTimeout      0                   0
-    SetVisible WaitingForResponse   0                   0
-    SetVisible ShowExplanationsButton1          0                   0
-    SetVisible ShowExplanationsButton2          0                   0
-    SetVisible ShowExplanationsButton2  0           0
-    SetVisible  SendEvelopeButton       0           0 
-    SetVisible CloseButton      0                   0
-    
-    SetVisible ApplyStampButton     0                   0
-    SetVisible Stamp                0                   0
-    Animate Stamp                   xpos c140   Accel   0 0
-    Animate DrawingPanel            xpos c0     Accel   0 0
-    Animate DrawingPanel            wide 0      Accel   0 0
-    Animate LetterFront             xpos c0     Accel   0 0
-    Animate LetterFront             wide 0      Accel   0 0
-    Animate LetterBack_Top      xpos c-250  Accel   0 0
-    Animate LetterBack_Top      ypos 400    Accel   0 0
-    Animate LetterBack_Top      wide 500    Accel   0 0
-    Animate LetterBack_Bottom       xpos c-250  Accel   0 0
-    Animate LetterBack_Bottom       ypos 400    Accel   0 0
-    Animate LetterBack_Bottom       wide 500    Accel   0 0
-    Animate LetterBack_Flap         xpos c-250  Accel   0 0
-    Animate LetterBack_Flap         ypos 400    Accel   0 0
-    Animate LetterBack_Flap         wide 500    Accel   0 0
-    Animate LetterBack_Flap         tall 0      Deaccel 0.6 0.4
-    Animate LetterBack_Top          ypos 400    Accel   0 0
-    
-    // Slider BG up
-    Animate BG          Position    "0 34"  Deaccel 0   0.3
+	// Set Everything Invisible
+	SetVisible ReturnModel			0					0
+	SetVisible	SendEvelopeButton		 0				0 
+	SetVisible ResponseTimeout		0					0
+	SetVisible WaitingForResponse	0					0
+	SetVisible ShowExplanationsButton1			0					0
+	SetVisible ShowExplanationsButton2			0					0
+	SetVisible ShowExplanationsButton2	0			0
+	SetVisible	SendEvelopeButton		0			0 
+	SetVisible CloseButton		0					0
+	
+	SetVisible ApplyStampButton		0					0
+	SetVisible Stamp				0					0
+	Animate Stamp					xpos c140	Accel	0 0
+	Animate DrawingPanel			xpos c0		Accel	0 0
+	Animate DrawingPanel			wide 0		Accel	0 0
+	Animate LetterFront				xpos c0		Accel	0 0
+	Animate LetterFront				wide 0		Accel	0 0
+	Animate LetterBack_Top		xpos c-250	Accel	0 0
+	Animate LetterBack_Top		ypos 400	Accel	0 0
+	Animate LetterBack_Top		wide 500	Accel	0 0
+	Animate LetterBack_Bottom		xpos c-250	Accel	0 0
+	Animate LetterBack_Bottom		ypos 400	Accel	0 0
+	Animate LetterBack_Bottom		wide 500	Accel	0 0
+	Animate LetterBack_Flap			xpos c-250	Accel	0 0
+	Animate LetterBack_Flap			ypos 400	Accel	0 0
+	Animate LetterBack_Flap			wide 500	Accel	0 0
+	Animate LetterBack_Flap			tall 0		Deaccel 0.6 0.4
+	Animate LetterBack_Top			ypos 400	Accel	0 0
+	
+	// Slider BG up
+	Animate BG			Position	"0 34"	Deaccel	0	0.3
 
-    // Fade dimmer down
-    Animate Dimmer Alpha "255" Linear 0 0.4
+	// Fade dimmer down
+	Animate Dimmer Alpha "255" Linear 0 0.4
 }
 //--------------------------------------------------------------------------
 event QuestItem_Identify_Expand
 {
-    StopEvent QuestItem_Identify_Collapse 0
-    Animate Dimmer wide 285 Bias 0.1    0.0 0.4
-    Animate Dimmer xpos 0   Bias 0.1    0.0 0.4
+	StopEvent QuestItem_Identify_Collapse 0
+	Animate Dimmer wide 285 Bias 0.1	0.0 0.4
+	Animate Dimmer xpos 0	Bias 0.1	0.0 0.4
 }
 
 event QuestItem_Identify_Collapse
 {
-    StopEvent QuestItem_Identify_Expand 0
-    Animate Dimmer  wide 0  Accel 0.4 0.4
-    Animate Dimmer  xpos 142    Accel 0.4 0.4
+	StopEvent QuestItem_Identify_Expand 0
+	Animate Dimmer	wide 0	Accel 0.4 0.4
+	Animate Dimmer	xpos 142	Accel 0.4 0.4
 }
 
 event QuestItem_Complete_Expand
 {
-    Animate Dimmer wide 285 Deaccel 0.4 0.1
-    Animate Dimmer xpos 0   Deaccel 0.4 0.1
+	Animate Dimmer wide 285 Deaccel	0.4 0.1
+	Animate Dimmer xpos 0	Deaccel 0.4 0.1
 }
 
 event QuestItem_Complete_Collapse
 {
-    Animate Dimmer  wide 0  Accel 0 0.4
-    Animate Dimmer  xpos 142    Accel 0 0.4
+	Animate Dimmer	wide 0	Accel 0 0.4
+	Animate Dimmer	xpos 142	Accel 0 0.4
 }
 
 event QuestItem_Complete_Progress
 {
-    Animate Dimmer  wide 0  Linear 0 5
-    Animate Dimmer  xpos 142    Linear 0 5
+	Animate Dimmer	wide 0	Linear 0 5
+	Animate Dimmer	xpos 142	Linear 0 5
 }
 
 event QuestItem_Options_Flash
 {
-    Animate OptionsButton FgColor LightOrange   Linear 0     0.1
-    Animate OptionsButton FgColor TanLight      Linear 0.1   0.1
-    Animate OptionsButton FgColor LightOrange   Linear 0.2   0.1
-    Animate OptionsButton FgColor TanLight      Linear 0.3   0.1
-    Animate OptionsButton FgColor LightOrange   Linear 0.4   0.1
-    Animate OptionsButton FgColor TanLight      Linear 0.5   0.1
+	Animate OptionsButton FgColor LightOrange	Linear 0	 0.1
+	Animate OptionsButton FgColor TanLight		Linear 0.1	 0.1
+	Animate OptionsButton FgColor LightOrange	Linear 0.2	 0.1
+	Animate OptionsButton FgColor TanLight		Linear 0.3	 0.1
+	Animate OptionsButton FgColor LightOrange	Linear 0.4	 0.1
+	Animate OptionsButton FgColor TanLight		Linear 0.5	 0.1
 }
 
 //--------------------------------------------------------------------------
 event QuestItem_Expand
 {
-    Animate FrontFolderContainer        ypos 240    Gain 0.75 0 0.4
-    RunEventChild IdentifyButtonContainer QuestItem_Identify_Expand 0
-    RunEventChild TurnInContainer QuestItem_Complete_Expand 0
+	Animate FrontFolderContainer		ypos 240	Gain 0.75 0 0.4
+	RunEventChild IdentifyButtonContainer QuestItem_Identify_Expand 0
+	RunEventChild TurnInContainer QuestItem_Complete_Expand 0
 
-    SetInputEnabled FrontFolderContainer 0 0
-    RunEvent QuestItem_Options_Flash 1
+	SetInputEnabled FrontFolderContainer 0 0
+	RunEvent QuestItem_Options_Flash 1
 }
 
 event QuestItem_Collapse
 {
-    Animate FrontFolderContainer        ypos 0  Gain 0.75 0 0.4
-    RunEventChild IdentifyButtonContainer QuestItem_Identify_Collapse 0
-    RunEventChild TurnInContainer QuestItem_Complete_Collapse 0
+	Animate FrontFolderContainer		ypos 0	Gain 0.75 0 0.4
+	RunEventChild IdentifyButtonContainer QuestItem_Identify_Collapse 0
+	RunEventChild TurnInContainer QuestItem_Complete_Collapse 0
 
-    SetInputEnabled FrontFolderContainer 1 0
+	SetInputEnabled FrontFolderContainer 1 0
 }
 
 event QuestItem_TurningIn
 {
-    RunEventChild TurnInContainer QuestItem_Complete_Progress 0
+	RunEventChild TurnInContainer QuestItem_Complete_Progress 0
 }
 
 event QuestItem_Reset
 {
-    Animate FrontFolderContainer        ypos 0  Linear 0 0
-    RunEventChild IdentifyButtonContainer QuestItem_Identify_Collapse 0
-    RunEventChild TurnInContainer QuestItem_Complete_Collapse 0
+	Animate FrontFolderContainer		ypos 0	Linear 0 0
+	RunEventChild IdentifyButtonContainer QuestItem_Identify_Collapse 0
+	RunEventChild TurnInContainer QuestItem_Complete_Collapse 0
 
-    SetInputEnabled FrontFolderContainer 1 0
+	SetInputEnabled FrontFolderContainer 1 0
 }
 
 //--------------------------------------------------------------------------
 event QuestItem_Operation2_Expand
 {
-    StopEvent QuestItem_Operation2_Collapse 0
+	StopEvent QuestItem_Operation2_Collapse 0
 
-    RunEventChild IdentifyButtonContainer QuestItem_Identify_Expand 0.4
-    RunEventChild TurnInContainer QuestItem_Complete_Expand 0.4
+	RunEventChild IdentifyButtonContainer QuestItem_Identify_Expand 0.4
+	RunEventChild TurnInContainer QuestItem_Complete_Expand 0.4
 
-    Animate FrontFolderContainer    xpos -270   Gain 0.75 0.4 0.3
-    Animate BackFolderContainer     xpos -270   Gain 0.75 0.4 0.3
-    Animate FrontFolderContainer    xpos -10    Gain 0.75 0.7 0.3
-    Animate BackFolderContainer     xpos 0  Gain 0.75 0.7 0.3
-    SetVisible FrontFolderContainer 0 0.7
-    SetVisible BackFolderContainer 1 0.7
+	Animate FrontFolderContainer	xpos -270	Gain 0.75 0.4 0.3
+	Animate BackFolderContainer		xpos -270	Gain 0.75 0.4 0.3
+	Animate FrontFolderContainer	xpos -10	Gain 0.75 0.7 0.3
+	Animate BackFolderContainer		xpos 0	Gain 0.75 0.7 0.3
+	SetVisible FrontFolderContainer 0 0.7
+	SetVisible BackFolderContainer 1 0.7
 
-    SetInputEnabled FrontFolderContainer 0 0
-    RunEvent QuestItem_Options_Flash 1
+	SetInputEnabled FrontFolderContainer 0 0
+	RunEvent QuestItem_Options_Flash 1
 }
 
 event QuestItem_Operation2_Collapse
 {
-    StopEvent QuestItem_Operation2_Expand 0
+	StopEvent QuestItem_Operation2_Expand 0
 
-    RunEventChild IdentifyButtonContainer QuestItem_Identify_Collapse 0
-    RunEventChild TurnInContainer QuestItem_Complete_Collapse 0
+	RunEventChild IdentifyButtonContainer QuestItem_Identify_Collapse 0
+	RunEventChild TurnInContainer QuestItem_Complete_Collapse 0
 
-    Animate FrontFolderContainer    xpos -270   Gain 0.75 0.0 0.3
-    Animate BackFolderContainer     xpos -270   Gain 0.75 0.0 0.3
-    Animate FrontFolderContainer    xpos 0  Gain 0.75 0.3 0.4
-    Animate BackFolderContainer     xpos 0  Gain 0.75 0.3 0.4
-    SetVisible FrontFolderContainer 1 0.3
-    SetVisible BackFolderContainer 0 0.3
+	Animate FrontFolderContainer	xpos -270	Gain 0.75 0.0 0.3
+	Animate BackFolderContainer		xpos -270	Gain 0.75 0.0 0.3
+	Animate FrontFolderContainer	xpos 0	Gain 0.75 0.3 0.4
+	Animate BackFolderContainer		xpos 0	Gain 0.75 0.3 0.4
+	SetVisible FrontFolderContainer 1 0.3
+	SetVisible BackFolderContainer 0 0.3
 
-    SetInputEnabled FrontFolderContainer 1 0
+	SetInputEnabled FrontFolderContainer 1 0
 }
 
 event QuestItem_Operation2_TurningIn
 {
-    RunEventChild TurnInContainer QuestItem_Complete_Progress 0
+	RunEventChild TurnInContainer QuestItem_Complete_Progress 0
 }
 
 event QuestItem_Operation2_Reset
 {
-    StopEvent QuestItem_Operation2_Collapse 0
-    StopEvent QuestItem_Operation2_Expand 0
+	StopEvent QuestItem_Operation2_Collapse 0
+	StopEvent QuestItem_Operation2_Expand 0
 
-    RunEventChild IdentifyButtonContainer QuestItem_Identify_Collapse 0
-    RunEventChild TurnInContainer QuestItem_Complete_Collapse 0
+	RunEventChild IdentifyButtonContainer QuestItem_Identify_Collapse 0
+	RunEventChild TurnInContainer QuestItem_Complete_Collapse 0
 
-    Animate FrontFolderContainer    xpos 0  Linear 0 0
-    Animate BackFolderContainer     xpos 0  Linear 0 0
-    SetVisible FrontFolderContainer 1 0
-    SetVisible BackFolderContainer 0 0
+	Animate FrontFolderContainer	xpos 0	Linear 0 0
+	Animate BackFolderContainer		xpos 0	Linear 0 0
+	SetVisible FrontFolderContainer 1 0
+	SetVisible BackFolderContainer 0 0
 
-    SetInputEnabled FrontFolderContainer 1 0
+	SetInputEnabled FrontFolderContainer 1 0
 }
 
 //--------------------------------------------------------------------------
 event QuestItem_DisableFrontMouse
 {
-    SetVisible FrontInputProxyPanel 0 0
+	SetVisible FrontInputProxyPanel 0 0
 }
 
 event QuestItem_EnableFrontMouse
 {
-    SetVisible FrontInputProxyPanel 1 0
+	SetVisible FrontInputProxyPanel 1 0
 }
 
 event QuestItem_Expand_Halloween
 {
-    StopEvent QuestItem_Collapse_Halloween 0
+	StopEvent QuestItem_Collapse_Halloween 0
 
-    // Immediately disable the mouse proxy so the inactive hint goes away
-    RunEventChild FrontFolderContainer  QuestItem_DisableFrontMouse 0
-    SetInputEnabled FrontFolderContainer 0 0
+	// Immediately disable the mouse proxy so the inactive hint goes away
+	RunEventChild FrontFolderContainer	QuestItem_DisableFrontMouse 0
+	SetInputEnabled FrontFolderContainer 0 0
 
-    // Slide the sleeve
-    Animate SleeveImage xpos 300 Bias 0.2  0.0 0.4
-    Animate EncodedStatus xpos 300 Bias 0.2  0.0 0.4
-    Animate ReadyToTurnInStatus xpos 300 Bias 0.2  0.0 0.4
-    Animate InactiveStatus xpos 300 Bias 0.2  0.0 0.4
+	// Slide the sleeve
+	Animate SleeveImage xpos 300 Bias 0.2  0.0 0.4
+	Animate EncodedStatus xpos 300 Bias 0.2  0.0 0.4
+	Animate ReadyToTurnInStatus xpos 300 Bias 0.2  0.0 0.4
+	Animate InactiveStatus xpos 300 Bias 0.2  0.0 0.4
 
-    // Once the sleeve is off, then "unroll" the paper
-    FireCommand 0.4 "playsound ui/quest_folder_open_halloween.wav"
-    RunEventChild IdentifyButtonContainer QuestItem_Identify_Expand 0.4
-    RunEventChild TurnInContainer QuestItem_Complete_Expand 0.4
-    Animate FrontFolderContainer        ypos 240    Gain 0.75 0.4 0.4
-    Animate QuestPaperContainer         tall 300    Gain 0.75 0.4 0.4
+	// Once the sleeve is off, then "unroll" the paper
+	FireCommand	0.4 "playsound ui/quest_folder_open_halloween.wav"
+	RunEventChild IdentifyButtonContainer QuestItem_Identify_Expand 0.4
+	RunEventChild TurnInContainer QuestItem_Complete_Expand 0.4
+	Animate FrontFolderContainer		ypos 240	Gain 0.75 0.4 0.4
+	Animate QuestPaperContainer			tall 300    Gain 0.75 0.4 0.4
 
-    RunEvent QuestItem_Options_Flash 1
+	RunEvent QuestItem_Options_Flash 1
 }
 
 event QuestItem_Collapse_Halloween
 {
-    StopEvent QuestItem_Expand_Halloween 0
+	StopEvent QuestItem_Expand_Halloween 0
 
-    // Roll up the paper
-    Animate FrontFolderContainer        ypos 0  Gain 0.75 0 0.4
-    Animate QuestPaperContainer         tall 70 Gain 0.75 0 0.4
-    RunEventChild IdentifyButtonContainer QuestItem_Identify_Collapse 0
-    RunEventChild TurnInContainer QuestItem_Complete_Collapse 0
-    RunEventChild FrontFolderContainer  QuestItem_EnableFrontMouse 0
+	// Roll up the paper
+	Animate FrontFolderContainer		ypos 0	Gain 0.75 0 0.4
+	Animate QuestPaperContainer			tall 70 Gain 0.75 0 0.4
+	RunEventChild IdentifyButtonContainer QuestItem_Identify_Collapse 0
+	RunEventChild TurnInContainer QuestItem_Complete_Collapse 0
+	RunEventChild FrontFolderContainer	QuestItem_EnableFrontMouse 0
 
-    // Put the sleeve back
-    FireCommand 0.5 "playsound ui/quest_folder_keeper_slide_on_halloween.wav"
+	// Put the sleeve back
+	FireCommand	0.5 "playsound ui/quest_folder_keeper_slide_on_halloween.wav"
 
-    Animate SleeveImage         xpos 15 Bias 0.8 0.5 0.2
-    Animate ReadyToTurnInStatus xpos 10     Bias 0.8 0.5 0.2
-    Animate InactiveStatus      xpos 10     Bias 0.8 0.5 0.2
-    Animate EncodedStatus       xpos 10     Bias 0.8 0.5 0.2
-    SetInputEnabled FrontFolderContainer 1 0
+	Animate SleeveImage			xpos 15	Bias 0.8 0.5 0.2
+	Animate ReadyToTurnInStatus xpos 10		Bias 0.8 0.5 0.2
+	Animate InactiveStatus		xpos 10		Bias 0.8 0.5 0.2
+	Animate EncodedStatus		xpos 10		Bias 0.8 0.5 0.2
+	SetInputEnabled FrontFolderContainer 1 0
 }
 
 event QuestItem_Reset_Halloween
 {
-    StopEvent QuestItem_Expand_Halloween 0
-    SetVisible FrontFolderContainer 1 0
-    RunEventChild FrontFolderContainer  QuestItem_EnableFrontMouse 0
+	StopEvent QuestItem_Expand_Halloween 0
+	SetVisible FrontFolderContainer 1 0
+	RunEventChild FrontFolderContainer	QuestItem_EnableFrontMouse 0
 
-    // Roll up the paper
-    Animate FrontFolderContainer        ypos 0  Linear 0 0
-    Animate QuestPaperContainer         tall 70 Linear 0 0
-    Animate EncodedStatus               xpos 10 Bias 0  0 0
-    Animate ReadyToTurnInStatus         xpos 10 Bias 0  0 0
-    Animate InactiveStatus              xpos 10 Bias 0  0 0
+	// Roll up the paper
+	Animate FrontFolderContainer		ypos 0	Linear 0 0
+	Animate QuestPaperContainer			tall 70 Linear 0 0
+	Animate EncodedStatus				xpos 10 Bias 0  0 0
+	Animate ReadyToTurnInStatus			xpos 10 Bias 0  0 0
+	Animate InactiveStatus				xpos 10 Bias 0  0 0
 
-    // Put the sleeve back
-    Animate SleeveImage xpos 15 Linear 0 0
-    SetInputEnabled FrontFolderContainer 1 0
+	// Put the sleeve back
+	Animate SleeveImage xpos 15	Linear 0 0
+	SetInputEnabled FrontFolderContainer 1 0
 }
 
 //--------------------------------------------------------------------------
 event QuestItem_Front_Selected
 {
-    StopEvent QuestItem_Front_OtherSelected 0
-    StopEvent QuestItem_Front_NoneSelected 0
+	StopEvent QuestItem_Front_OtherSelected 0
+	StopEvent QuestItem_Front_NoneSelected 0
 
-    Animate         MainContainer       ypos 0  Gain 0.75 0 0.4
+	Animate			MainContainer		ypos 0	Gain 0.75 0 0.4
 }
 
 event QuestItem_Front_OtherSelected
 {
-    StopEvent QuestItem_Front_Selected 0
-    StopEvent QuestItem_Front_NoneSelected 0
+	StopEvent QuestItem_Front_Selected 0
+	StopEvent QuestItem_Front_NoneSelected 0
 
-    Animate         MainContainer       ypos 300    Gain 0.75 0 0.4
+	Animate			MainContainer		ypos 300	Gain 0.75 0 0.4
 }
 
 
 event QuestItem_Front_NoneSelected
 {
-    StopEvent QuestItem_Front_Selected 0
-    StopEvent QuestItem_Front_OtherSelected 0
+	StopEvent QuestItem_Front_Selected 0
+	StopEvent QuestItem_Front_OtherSelected 0
 
-    Animate         MainContainer       ypos 120    Gain 0.75 0 0.4
+	Animate			MainContainer		ypos 120	Gain 0.75 0 0.4
 }
 
 //--------------------------------------------------------------------------
 event QuestItem_Back_Selected
 {
-    StopEvent QuestItem_Back_OtherSelected 0
-    StopEvent QuestItem_Back_NoneSelected 0
+	StopEvent QuestItem_Back_OtherSelected 0
+	StopEvent QuestItem_Back_NoneSelected 0
 
-    Animate         MainContainer       ypos 0  Gain 0.75 0 0.4
+	Animate			MainContainer		ypos 0	Gain 0.75 0 0.4
 }
 
 event QuestItem_Back_OtherSelected
 {
-    StopEvent QuestItem_Back_Selected 0
-    StopEvent QuestItem_Back_NoneSelected 0
+	StopEvent QuestItem_Back_Selected 0
+	StopEvent QuestItem_Back_NoneSelected 0
 
-    Animate         MainContainer       ypos 300    Gain 0.75 0 0.8
+	Animate			MainContainer		ypos 300	Gain 0.75 0 0.8
 }
 
 
 event QuestItem_Back_NoneSelected
 {
-    StopEvent QuestItem_Back_Selected 0
-    StopEvent QuestItem_Back_OtherSelected 0
+	StopEvent QuestItem_Back_Selected 0
+	StopEvent QuestItem_Back_OtherSelected 0
 
-    Animate         MainContainer       ypos 0      Gain 0.75 0 0.4
+	Animate			MainContainer		ypos 0		Gain 0.75 0 0.4
 }
 
 //--------------------------------------------------------------------------
 event QuestItem_Highlight_On_Halloween
 {
-    SetVisible GlowImage 1 0    
-    Animate GlowImage Alpha 255 Bias 0.8 0 0.2
+	SetVisible GlowImage 1 0	
+	Animate GlowImage Alpha 255 Bias 0.8 0 0.2
 }
 
 event QuestItem_Highlight_Off_Halloween
 {
-    Animate GlowImage Alpha 0 Bias 0.8 0 0.2
+	Animate GlowImage Alpha 0 Bias 0.8 0 0.2
 }
 
+
+//--------------------------------------------------------------------------
+event CompetitiveGame_LowerChatWindow
+{
+	Animate HudChat ypos r140 Accel 0 0
+}
+
+event CompetitiveGame_RestoreChatWindow
+{
+	Animate HudChat ypos 275 Accel 0 0
+}
+
+event HudTournament_MoveChatWindow
+{
+	RunEvent CompetitiveGame_LowerChatWindow 0
+	RunEvent CompetitiveGame_RestoreChatWindow 10
+}
+
+//--------------------------------------------------------------------------
+event HudTournament_MoveTimerDown
+{
+	Animate CountdownLabel ypos 150 Linear 0 0
+	Animate CountdownLabelShadow ypos 150 Linear 0 0
+
+	SetVisible CountdownBG 0 5
+	SetVisible CountdownLabel 1 0
+	SetVisible CountdownLabelShadow 1 0
+
+	Animate CountdownLabel ypos c-3 Gain 0.75 0 0.4
+	Animate CountdownLabelShadow ypos c0 Gain 0.75 0 0.4
+
+	SetVisible	TournamentConditionLabel 0 2
+
+	SetVisible CountdownLabel 0 3
+	SetVisible CountdownLabelShadow 0 3
+}
+event HudTournament_AnimateTeams_In
+{
+	Animate RedTeamPanel xpos c150 Accel 0 0.25
+	Animate BlueTeamPanel xpos c-300 Accel 0 0.25
+}
+
+event HudTournament_AnimateTeams_Out
+{
+	Animate RedTeamPanel xpos r-5 Accel 0 0.68
+	Animate BlueTeamPanel xpos -155 Accel 0 0.68
+}
+
+event HudMatchSummary_ShowMatchStartDoors
+{
+	SetVisible	MatchDoors	1	0
+	SetVisible	BlueTeamPanel	1	0
+	SetVisible	RedTeamPanel	1	0
+	SetVisible CountdownLabel 1 0
+	SetVisible CountdownLabelShadow 1 0
+	Animate CountdownLabel ypos 150 Linear 0 0
+	Animate CountdownLabelShadow ypos 150 Linear 0 0
+
+	Animate CountdownLabel ypos c-3 Gain 0.75 0 0.4
+	Animate CountdownLabelShadow ypos c-0 Gain 0.75 0 0.4
+
+	SetVisible	HudTournamentBG 0	2
+	RunEventChild MatchDoors PlayDoorCloseAnim 0
+	RunEventChild FrontParticlePanel PlayDoorSlamParticles 0.45
+	RunEventChild MatchDoors PlayDoorOpenAnim 7
+
+	RunEvent HudTournament_AnimateTeams_In 0.25
+	RunEvent HudTournament_AnimateTeams_Out 7.70
+
+	SetVisible MatchDoors	0 9
+	SetVisible CountdownLabel 0 9.9
+	SetVisible CountdownLabelShadow 0 9.9
+
+	RunEvent HudTournament_DoorsCleanup 10
+	
+	SetVisible CountdownBG 1 11
+}
+
+event HudMatchSummary_ShowCountdown
+{
+	SetVisible CountdownLabel 1 0
+	SetVisible CountdownLabelShadow 1 0
+	Animate CountdownLabel ypos 150 Linear 0 0
+	Animate CountdownLabelShadow ypos 150 Linear 0 0
+	Animate CountdownLabel ypos c-3 Gain 0.75 0 0.4
+	Animate CountdownLabelShadow ypos c-0 Gain 0.75 0 0.4
+	SetVisible CountdownLabel 0 9.9
+	SetVisible CountdownLabelShadow 0 9.9
+}
+
+event PlayDoorSlamParticles
+{
+	FireCommand 0 "start0"
+}
+
+event PlayDoorCloseAnim
+{
+	FireCommand 0 "animation close"
+}
+
+event PlayDoorOpenAnim
+{
+	FireCommand 0 "animation open"
+}
+
+event HudTournament_ShowTimerCompetitive
+{
+	Animate CountdownLabel ypos 150 Linear 0 0
+	Animate CountdownLabelShadow ypos 150 Linear 0 0
+
+	SetVisible CountdownBG  1 0
+	SetVisible CountdownLabel 1 0
+	SetVisible CountdownLabelShadow 1 0
+}
+
+event HudTournament_ShowTimerDefault
+{
+	Animate CountdownLabel ypos 425 Linear 0 0
+	Animate CountdownLabelShadow ypos 425 Linear 0 0
+
+	SetVisible CountdownBG  1 0
+	SetVisible CountdownLabel 1 0
+	SetVisible CountdownLabelShadow 1 0
+}
+
+event HudTournament_HideTimer
+{
+	SetVisible CountdownBG  0 0
+	SetVisible CountdownLabel 0 0
+	SetVisible CountdownLabelShadow 0 0
+}
+
+event Hud_StatsAndMedals_Show
+{
+	SetVisible	DrawingPanel	0	0
+	SetVisible	StatsBgPanel	1	0
+	SetVisible	StatsLabelPanel	1	0
+	Animate StatsLabelPanel ypos 75 Accel 0 0.1
+	Animate BlueMedals ypos 75 Accel 0 0.1
+	Animate RedMedals ypos 75 Accel 0 0.1
+	Animate BlueTeamLabel ypos 107 Accel 0 0.1
+	Animate RedTeamLabel ypos 107 Accel 0 0.1
+}
+
+event CompetitiveGame_HideDisconnectButton
+{
+	Animate DisconnectButton ypos r-100 Accel 0 0
+}
+
+event CompetitiveGame_ShowDisconnectButton
+{
+	Animate DisconnectButton ypos r50 Accel 0 0.4
+}
+
+event HudTournament_ShowRoundSign
+{
+	SetVisible RoundSignModel 1 0
+	RunEventChild RoundSignModel HudTournament_PlaySignAnim 0
+	SetVisible RoundSignModel 0 6
+}
+
+event HudTournament_PlaySignAnim
+{
+	FireCommand 0 "animation intro"
+	FireCommand 5 "animation outro"
+}
+
+event TeamStatus_PlayerDead
+{
+	SetVisible DeathPanel  1 0
+	SetVisible SkullPanel  1 0
+	SetVisible respawntime  1 0
+
+	Animate DeathPanel ypos 19 Accel 0 0.2
+	Animate SkullPanel ypos 22 Accel 0 0.2
+	Animate respawntime ypos 18 Accel 0 0.2
+}
+
+event TeamStatus_PlayerAlive
+{
+	Animate DeathPanel ypos 0 Accel 0 0.2
+	Animate SkullPanel ypos 0 Accel 0 0.2
+	Animate respawntime ypos 0 Accel 0 0.2
+
+	SetVisible DeathPanel  0 0.2
+	SetVisible SkullPanel  0 0.2
+	SetVisible respawntime 0 0.2
+}
+
+event HudMatchSummary_ShowMatchWinDoors
+{
+	SetVisible	MatchDoors	1	0
+	SetVisible	FrontParticlePanel	1	0
+
+	RunEventChild MatchDoors PlayDoorCloseAnim 0
+	RunEventChild FrontParticlePanel PlayDoorSlamParticles 0.45
+	RunEventChild MatchDoors PlayDoorOpenAnim 4.5
+
+	SetVisible MatchDoors	0 7
+	SetVisible	FrontParticlePanel	0	7
+}
+
+event WinPanel_CompPos
+{
+	Animate WinPanel ypos 115 Linear 0 0
+}
+
+event WinPanel_NormalPos
+{
+	Animate WinPanel ypos 215 Linear 0 0
+}
 //

@@ -24,7 +24,7 @@
     }
     "PlayCompButton"
     {
-        "label" "Comp?" 
+        "label" "Matchmaking" 
         "command" "ladder_ui_show"
         "subimage" "glyph_practice"
         "OnlyAtMenu" "1"

@@ -1657,16 +1657,16 @@
 
     }
 
-    WinPanel
-    {
-        "fieldName"             "WinPanel"
-        "visible"               "1"
-        "enabled"               "1"
-        "xpos"                  "c-100"
-        "ypos"                  "260"
-        "wide"                  "200"
-        "tall"                  "300"
-    }
+	WinPanel
+	{
+		"fieldName"				"WinPanel"
+		"visible"				"1"
+		"enabled"				"1"
+		"xpos"					"c-100"
+		"ypos"					"260"
+		"wide"					"200"
+		"tall"					"300"
+	}
 
     ArenaWinPanel
     {
@@ -2178,6 +2178,16 @@
         "wide"          "470"
         "tall"          "200"
         "PaintBackgroundType"   "0"
+    }
+    MatchSummary
+    {
+    "fieldName" "MatchSummary"
+    "visible" "0"
+    "enabled" "1"
+    "xpos"  "0"
+    "ypos"  "0"
+    "wide"  "f0"
+    "tall"  "f0"
     }
 }
 

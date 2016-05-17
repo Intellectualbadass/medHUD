@@ -1,5 +1,13 @@
 ﻿
-CURRENT VERSION: v24
+CURRENT VERSION: v26
+
+v26 - bi-yearly?
+-matchmaking - updated
+-winpanel - updated
+-medhud - updated.
+
+v25 -  hallo von der anderen seite
+-fixed scoreboard hopefully
 
 v24 - crossbow building?? vaxx is good??
 -menus - fixed for tough break

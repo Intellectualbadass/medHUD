@@ -1884,7 +1884,7 @@
             "use_proportional_insets" "1"
             "font"          "CerbeticaBold8"
             "textAlignment" "center"
-            "labelText"     "January 13"
+            "labelText"     "May 17"
             "dulltext"      "0"
             "brighttext"    "0"
             "default"       "1"
@@ -1946,7 +1946,7 @@
             "use_proportional_insets" "1"
             "font"          "CerbeticaBold12"
             "textAlignment" "center"
-            "labelText"     "v25 - hallo von der anderen seite"
+            "labelText"     "v26 - bi-yearly?"
             "dulltext"      "0"
             "brighttext"    "0"
             "default"       "1"
@@ -1980,6 +1980,69 @@
             }
         }
     }
+    "terces"
+    {
+        "ControlName"   "EditablePanel"
+        "fieldname"     "terces"
+        "xpos"          "c-152"
+        "ypos"          "135"
+        "zpos"          "1"
+        "wide"          "300"
+        "tall"          "20"
+        "visible"       "1"
+        "PaintBackgroundType"   "0"
+        "SubButton"
+        {
+            "ControlName"   "CExImageButton"
+            "fieldName"     "SubButton"
+            "xpos"          "55"
+            "ypos"          "0"
+            "wide"          "200"
+            "tall"          "20"
+            "autoResize"    "0"
+            "pinCorner"     "3"
+            "visible"       "1"
+            "enabled"       "1"
+            "tabPosition"   "0"
+            "textinsetx"    "25"
+            "use_proportional_insets" "1"
+            "font"          "CerbeticaBold12"
+            "textAlignment" "center"
+            "labelText"     "Use the Mannterface, I am Saxton Hale."
+            "dulltext"      "0"
+            "brighttext"    "0"
+            "default"       "1"
+            
+            "sound_depressed"   "UI/buttonclick.wav"
+            "sound_released"    "vo/announcer_success.wav"
+            
+            "border_default"    ""
+            "border_armed"      ""
+            "paintbackground"   "0"
+            
+            "defaultFgColor_override" "30 30 30 75"
+            "armedFgColor_override" "30 30 30 75"
+            "depressedFgColor_override" "30 30 30 75"
+            
+            "image_drawcolor"   "117 107 94 255"
+            "image_armedcolor"  "235 226 202 255"
+
+            "SubImage"
+            {
+                "ControlName"   "ImagePanel"
+                "fieldName"     "SubImage"
+                "xpos"          "6"
+                "ypos"          "6"
+                "zpos"          "1"
+                "wide"          "14"
+                "tall"          "14"
+                "visible"       "1"
+                "enabled"       "1"
+                "scaleImage"    "1"
+            }
+        }
+    }
+
     
     "QuickplayButton"
     {
@@ -2143,12 +2206,25 @@
             "border_armed"      ""
             "paintbackground"   "0"
             
-            "defaultFgColor_override" "TanLight"
-            "armedFgColor_override" "Button Color"
-            "depressedFgColor_override" "Button Color"
+            "defaultFgColor_override" "TanDark"
+            "armedFgColor_override" "TanDark"
+            "depressedFgColor_override" "TanDark"
             
             "image_drawcolor"   "117 107 94 255"
             "image_armedcolor"  "235 226 202 255"
+            
+            if_competitive
+            {
+                "defaultFgColor_override"   "Heal Numbers"
+                "armedFgColor_override"     "Button Color"
+                "depressedFgColor_override" "Button Color"
+            }
+            if_competitive_stress_event
+            {
+                "defaultFgColor_override"   "Damage Numbers"
+                "armedFgColor_override"     "Button Color"
+                "depressedFgColor_override" "Button Color"
+            }
 
             "SubImage"
             {
