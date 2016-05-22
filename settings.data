@@ -6,28 +6,6 @@ Window();
 [Border:1, BG:#DDDDDD, FG:#000000]
 Banner("medHUD.png", auto, normal);
 
-[Name:Background, Default:Gray]
-GlobalComboBox("Background", "Background")
-{
-    Energy
-    Gray
-}
-    
-#if Background == "Energy"
-{
-    Copy("materials\console\background_upward - Energy.vtf", "materials\console\background_upward.vtf");
-    Copy("materials\console\background_upward2 - Energy.vtf", "materials\console\background_upward2.vtf"");
-    Copy("materials\console\background_upward_widescreen - Energy.vtf", "materials\console\background_upward_widescreen.vtf"");
-    Copy("materials\console\background_upward_widescreen2 - Energy.vtf", "materials\console\background_upward_widescreen2.vtf"");
-}
-#if Background == "Gray"
-{
-    Copy("materials\console\background_upward - Gray.vtf", "materials\console\background_upward.vtf");
-    Copy("materials\console\background_upward2 - Gray.vtf", "materials\console\background_upward2.vtf"");
-    Copy("materials\console\background_upward_widescreen - Gray.vtf", "materials\console\background_upward_widescreen.vtf"");
-    Copy("materials\console\background_upward_widescreen2 - Gray.vtf", "materials\console\background_upward_widescreen2.vtf"");
-}
-
 [Name:Target ID, Default:Cross]
 GlobalComboBox("Target ID", "Target ID")
 {

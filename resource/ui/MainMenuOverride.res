@@ -150,6 +150,20 @@
         }
     }
     
+    "ActualBG"
+    {
+        "ControlName"   "ImagePanel"
+        "fieldName"     "ActualBG"
+        "xpos"          "0"
+        "ypos"          "0"
+        "zpos"          "0"
+        "wide"          "f0"
+        "tall"          "f0"
+        "visible"       "1"
+        "enabled"       "1"
+        "scaleImage"    "1"
+        "fillcolor"     "Base Color"
+    }
     "SidePanelBG"
     {
         "ControlName"   "ImagePanel"
@@ -164,6 +178,7 @@
         "scaleImage"    "1"
         "fillcolor"     "0 0 0 175"
     }
+
     "SidePanelLeftStripe"
     {
         "ControlName"   "ImagePanel"
