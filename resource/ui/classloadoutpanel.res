@@ -8,8 +8,8 @@
     {
         "ControlName"   "ImagePanel"
         "fieldName"     "Background"
-        "xpos"          "0"
-        "ypos"          "0"
+        "xpos"          "r0"
+        "ypos"          "r0"
         "zpos"          "-7"
         "wide"          "f0"
         "tall"          "f0"
@@ -36,6 +36,22 @@
         }
     }
     
+    "BG_new"
+    {
+        "ControlName"   "EditablePanel"
+        "fieldName"     "BG_new"
+        "xpos"          "0"
+        "ypos"          "0"
+        "zpos"          "-6"     
+        "wide"          "f0"
+        "tall"          "f0"
+        "autoResize"    "0"
+        "pinCorner"     "0"
+        "visible"       "1"
+        "enabled"       "1"
+        "paintbackground"   "1"
+        "bgcolor_override"  "25 25 25 255"
+    }
     "BG_loadout"
     {
         "ControlName"   "EditablePanel"
@@ -52,6 +68,7 @@
         "paintbackground"   "1"
         "bgcolor_override"  "0 0 0 175"
     }
+
     
     "BG_CLoadout"
     {

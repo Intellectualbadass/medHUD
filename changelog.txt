@@ -1,5 +1,9 @@
 ﻿
-CURRENT VERSION: v26
+CURRENT VERSION: v27
+
+v27 - an update
+-loadout select - new icons, will work on sv_pure
+-loadout - fixed background
 
 v26 - bi-yearly?
 -matchmaking - updated

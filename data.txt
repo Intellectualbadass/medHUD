@@ -5,5 +5,5 @@ steamid=76561198042111402
 url=https://github.com/Intellectualbadass/medHUD
 url=http://steamcommunity.com/groups/medhud
 url=http://teamfortress.tv/thread/15467/medhud/
-version=26
+version=27
 update_url=https://github.com/Intellectualbadass/medhud/archive/master.zip
