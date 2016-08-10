@@ -450,11 +450,11 @@
     {
         "ControlName"   "EditablePanel"
         "fieldName"     "Notifications_ShowButtonPanel"
-        "xpos"          "c-50"
-        "ypos"          "415"
+        "xpos"          "c188"
+        "ypos"          "28"
         "zpos"          "10"
-        "wide"          "20"
-        "tall"          "20"
+        "wide"          "32"
+        "tall"          "32"
         "autoResize"    "0"
         "pinCorner"     "3"
         "visible"       "1"
@@ -521,7 +521,6 @@
             "dulltext"      "0"
             "brighttext"    "0"
             "default"       "1"
-            "actionsignallevel" "2"
 
             "Command"       "noti_show"
             "navActivate"   "<QuickplayButton"
@@ -549,102 +548,11 @@
         }
     }
 
-    "WatchStreamButton"
-    {
-        "ControlName"   "EditablePanel"
-        "fieldName"     "WatchStreamButton"
-        "xpos"          "c5"
-        "ypos"          "415"
-        "zpos"          "1"
-        "wide"          "20"
-        "tall"          "20"
-        "autoResize"    "0"
-        "pinCorner"     "3"
-        "visible"       "1"
-        "enabled"       "1"
-        "tabPosition"   "0"
-        
-        "navUp"         "Notifications_Panel"
-        "navLeft"       "SettingsButton"
-
-        "SubButton"
-        {
-            "ControlName"   "CExImageButton"
-            "fieldName"     "SubButton"
-            "xpos"          "0"
-            "ypos"          "0"
-            "wide"          "f0"
-            "tall"          "f0"
-            "autoResize"    "0"
-            "pinCorner"     "3"
-            "visible"       "1"
-            "enabled"       "1"
-            "tabPosition"   "0"
-            "textinsetx"    "25"
-            "labelText"     ""
-            "use_proportional_insets" "1"
-            "font"          "HudFontSmallBold"
-            "command"       "watch_stream"
-            "textAlignment" "west"
-            "dulltext"      "0"
-            "brighttext"    "0"
-            "default"       "1"
-            "sound_depressed"   "UI/buttonclick.wav"
-            "sound_released"    "vo/null.mp3"
-            "actionsignallevel" "2"
-            "proportionaltoparent"  "1"
-                
-            "sound_depressed"   "UI/buttonclick.wav"
-            "sound_released"    "UI/buttonclickrelease.wav"
-            "paintbackground"   "0"
-            "paintborder"       "0"
-            "image_drawcolor"   "235 226 202 255"
-            "image_armedcolor"  "255 255 255 255"
-
-            "SubImage"
-            {
-                "ControlName"   "ImagePanel"
-                "fieldName"     "SubImage"
-                "xpos"          "cs-0.5"
-                "ypos"          "cs-0.5"
-                "zpos"          "1"
-                "wide"          "f0"
-                "tall"          "f0"
-                "visible"       "1"
-                "enabled"       "1"
-                "scaleImage"    "1"
-                "image"         "button_streaming"
-
-                "proportionaltoparent"  "1"
-                "mouseinputenabled" "0"
-                "keyboardinputenabled" "0"
-            }       
-        }
-    }
-
-    "StreamListPanel"
-    {
-        "ControlName"   "CTFStreamListPanel"
-        "fieldName"     "StreamListPanel"
-        "xpos"          "c5"
-        "ypos"          "65"
-        "zpos"          "1"
-        "wide"          "300"
-        "tall"          "350"
-        "visible"       "0"
-        "PaintBackgroundType"   "2"
-        "paintbackground"   "0"
-        "border"        "MainMenuHighlightBorder"
-
-        "navDown"       "SettingsButton"        // when a sub element can't nav down it will pass through this
-        "navLeft"       "WatchStreamButton" // when a sub element can't nav left it will pass through this
-    }
-
     "QuestLogButton"
     {
         "ControlName"   "EditablePanel"
         "fieldName"     "QuestLogButton"
-        "xpos"          "c-25"
+        "xpos"          "c-27"
         "ypos"          "415"
         "zpos"          "1"
         "wide"          "20"
@@ -681,7 +589,7 @@
             "brighttext"    "0"
             "default"       "1"
             "sound_depressed"   "UI/buttonclick.wav"
-            "sound_released"    "vo/null.mp3"
+            "sound_released"    "UI/buttonclickrelease.wav"
             "actionsignallevel" "2"
             "proportionaltoparent"  "1"
                 
@@ -769,7 +677,7 @@
     {
         "ControlName"   "EditablePanel"
         "fieldName"     "MOTD_ShowButtonPanel"
-        "xpos"          "c35"
+        "xpos"          "c-4"
         "ypos"          "415"
         "zpos"          "1"
         "wide"          "20"
@@ -778,12 +686,6 @@
         "pinCorner"     "3"
         "visible"       "1"
         "enabled"       "1"
-
-        "navUp"         "MOTD_Panel"                // pass through when naving up to this or the fully displayed MOTD
-        "navDown"       "Notifications_Panel"       // when a sub element can't nav down it will pass through this
-        "navLeft"       "Notifications_Panel"       // when a sub element can't nav left it will pass through this
-        "navRight"      "MOTD_Panel"                // pass through when naving right to this or the fully displayed MOTD
-        "navToRelay"    "MOTD_ShowButtonPanel_SB"   // when naving to this it auto navs to this child instead
         
         "MOTD_ShowButtonPanel_SB"
         {
@@ -805,15 +707,11 @@
             "dulltext"      "0"
             "brighttext"    "0"
             "default"       "1"
-
-            "actionsignallevel" "2"
             "Command"       "motd_show"
-            "navActivate"   "<QuickplayButton"      // after selecting this, nav to this sibling
-
             "sound_depressed"   "UI/buttonclick.wav"
             "sound_released"    "UI/buttonclickrelease.wav"
             "paintbackground" "0"
-            "image_drawcolor"   "235 226 202 255"
+            "image_drawcolor"   "TanLight"
             "image_armedcolor"  "255 255 255 255"
 
             "SubImage"
@@ -837,19 +735,16 @@
     {
         "ControlName"   "EditablePanel"
         "fieldName"     "MOTD_Panel"
-        "xpos"          "c5"
-        "ypos"          "65"
+        "xpos"          "c0"
+        "ypos"          "63"
         "zpos"          "1"
         "wide"          "300"
-        "tall"          "350"
+        "tall"          "360"
         "visible"       "0"
         "PaintBackgroundType"   "2"
-        "paintbackground"   "0"
-        "border"        "MainMenuHighlightBorder"
-
-        "navDown"       "SettingsButton"        // when a sub element can't nav down it will pass through this
-        "navLeft"       "MOTD_ShowButtonPanel"  // when a sub element can't nav left it will pass through this
-        "navToRelay"    "MOTD_URLButton"        // when naving to this it auto navs to this child instead
+        "paintbackground"       "1"
+        "border"                "CyanBorderThick"
+        "bgcolor_override"      "25 25 25 255"
         
         "MOTD_HeaderContainer"
         {
@@ -865,7 +760,7 @@
             {
                 "ControlName"   "CExLabel"
                 "fieldName"     "MOTD_HeaderLabel"
-                "font"          "HudFontSmallBold"
+                "font"          "CerbeticaBold24"
                 "textAlignment" "center"
                 "labelText"     "%motdheader%"
                 "xpos"          "0"
@@ -876,9 +771,7 @@
                 "pinCorner"     "0"
                 "visible"       "1"
                 "enabled"       "1"
-                "PaintBackgroundType" "2"
-                "fgcolor_override"  "235 226 202 255"
-                "bgcolor_override"  "141 178 61 255"
+                "fgcolor_override"  "TanLight"
             }
         }
         
@@ -896,17 +789,12 @@
             "visible"       "1"
             "enabled"       "1"
             "tabPosition"   "0"
-            "labeltext"     ""
-            "font"          "HudFontSmallBold"
+            "labeltext"     "X"
+            "font"          "CerbeticaBold16"
             "textAlignment" "center"
             "dulltext"      "0"
             "brighttext"    "0"
             "default"       "0"
-            "actionsignallevel" "2"
-
-            "navDown"           "MOTD_URLButton"
-            "navActivate"       "<QuickplayButton"
-
             "sound_depressed"   "UI/buttonclick.wav"
             "sound_released"    "UI/buttonclickrelease.wav"
             "Command"       "motd_hide"
@@ -915,34 +803,20 @@
             
             //"defaultFgColor_override" "235 226 202 255"
             //"armedFgColor_override" "46 43 42 255"
-            "defaultFgColor_override" "46 43 42 255"
-            "armedFgColor_override" "235 226 202 255"
-            "depressedFgColor_override" "46 43 42 255"
+            "defaultFgColor_override" "TanLight"
+            "armedFgColor_override" "Base Color"
+            "depressedFgColor_override" "Base Color"
             
             "image_drawcolor"   "235 226 202 255"
-            "image_armedcolor"  "200 80 60 255"
-            "SubImage"
-            {
-                "ControlName"   "ImagePanel"
-                "fieldName"     "SubImage"
-                "xpos"          "0"
-                "ypos"          "0"
-                "zpos"          "1"
-                "wide"          "14"
-                "tall"          "14"
-                "visible"       "1"
-                "enabled"       "1"
-                "image"         "close_button"
-                "scaleImage"    "1"
-            }               
+            "image_armedcolor"  "200 80 60 255"     
         }   
 
         "MOTD_HeaderIcon"
         {
             "ControlName"   "ImagePanel"
             "fieldName"     "MOTD_HeaderIcon"
-            "xpos"          "265"
-            "ypos"          "25"
+            "xpos"          "9999"
+            "ypos"          "9999"
             "zpos"          "100"
             "wide"          "25"
             "tall"          "25"
@@ -967,7 +841,7 @@
             "pinCorner"     "0"
             "visible"       "1"
             "enabled"       "1"
-            "fgcolor"       "LabelDark"
+            "fgcolor_override"  "TanLight"
             "wrap"          "1"
         }
         
@@ -986,36 +860,35 @@
             "pinCorner"     "0"
             "visible"       "1"
             "enabled"       "1"
-            "fgcolor"       "LabelDark"
+            "fgcolor_override"  "TanLight"
         }
         
         "MOTD_TitleImageBg"
         {
             "ControlName"   "ImagePanel"
             "fieldName"     "MOTD_TitleImageBg"
-            "xpos"          "cs-0.5"
+            "xpos"          "10"
             "ypos"          "55"
             "zpos"          "99"
-            "wide"          "250"
-            "tall"          "150"
+            "wide"          "280"
+            "tall"          "180"
             "visible"       "1"
             "enabled"       "1"
             "image"         "item_bg"
             "scaleImage"    "1"
-            "proportionaltoparent" "1"
         }
         
         "MOTD_TitleImageContainer"
         {
             "ControlName"   "EditablePanel"
             "fieldName"     "MOTD_TitleImageContainer"
-            "xpos"          "cs-0.5"
+            "xpos"          "10"
             "ypos"          "55"
             "zpos"          "100"
-            "wide"          "250"
-            "tall"          "150"
+            "wide"          "280"
+            "tall"          "180"
             "visible"       "1"
-            "proportionaltoparent" "1"
+            "border"        "NoBorder"
             
             "MOTD_TitleImage"
             {
@@ -1024,8 +897,8 @@
                 "xpos"          "0"
                 "ypos"          "0"
                 "zpos"          "100"
-                "wide"          "250"
-                "tall"          "250"
+                "wide"          "280"
+                "tall"          "280"
                 "visible"       "1"
                 "enabled"       "1"
                 "image"         "class_icons/filter_all"
@@ -1038,11 +911,11 @@
             "ControlName"   "ScrollableEditablePanel"
             "fieldName"     "MOTD_TextScroller"
             "xpos"          "20"
-            "ypos"          "215"
+            "ypos"          "240"
             "wide"          "280"
-            "tall"          "115"
+            "tall"          "95"
             "PaintBackgroundType"   "2"
-            "fgcolor"       "LabelDark"
+            "fgcolor_override"  "Base Color"
             
             "MOTD_TextPanel"
             {
@@ -1070,7 +943,7 @@
                     "pinCorner"     "0"
                     "visible"       "1"
                     "enabled"       "1"
-                    "fgcolor"       "LabelDark"
+                    "fgcolor_override"  "TanLight"
                     "wrap"          "1"
                 }
             }
@@ -1081,7 +954,7 @@
             "ControlName"   "CExButton"
             "fieldName"     "MOTD_URLButton"
             "xpos"          "75"
-            "ypos"          "rs1.2"
+            "ypos"          "339"
             "wide"          "150"
             "tall"          "15"
             "autoResize"    "0"
@@ -1098,21 +971,19 @@
             "brighttext"    "0"
             "default"       "1"
             "command"       "motd_viewurl"
-            "proportionaltoparent" "1"
-            "actionsignallevel" "2"
-
-
-            "navUp"         "MOTD_CloseButton"
-            "navLeft"       "MOTD_PrevButton"
-            "navRight"      "MOTD_NextButton"
-
-            "sound_depressed"   "UI/buttonclick.wav"
-            "sound_released"    "UI/buttonclickrelease.wav"
-            
-            "defaultFgColor_override" "235 226 202 255"
-            "defaultBgColor_override" "46 43 42 255"
-            "armedFgColor_override" "235 226 202 255"
-            "depressedFgColor_override" "235 226 202 255"
+        "sound_depressed"   "UI/buttonclick.wav"
+        "sound_released"    "UI/buttonclickrelease.wav"
+        
+        "defaultBgColor_override"   "25 25 25 255"
+        "armedBgColor_override"     "35 35 35 255"
+        "depressedBgColor_override" "25 25 25 255"
+        
+        "defaultFgColor_override"   "TanLight"
+        "armedFgColor_override"     "TanLight"
+        "depressedFgColor_override" "TanDark"
+        
+        "border_default"            "NoBorder"
+        "border_armed"              "NoBorder"
         }   
         
         "MOTD_PrevButton"
@@ -1126,7 +997,7 @@
             "tall"          "20"
             "autoResize"    "0"
             "pinCorner"     "3"
-            "visible"       "0"
+            "visible"       "1"
             "enabled"       "1"
             "tabPosition"   "0"
             "labelText"     ""
@@ -1136,11 +1007,6 @@
             "brighttext"    "0"
             "default"       "1"
             "Command"       "motd_prev"
-            "actionsignallevel" "2"
-
-            "navUp"         "MOTD_CloseButton"
-            "navRight"      "MOTD_URLButton"
-
             "sound_depressed"   "UI/buttonclick.wav"
             "sound_released"    "UI/buttonclickrelease.wav"
             "paintbackground" "0"
@@ -1174,7 +1040,7 @@
             "tall"          "20"
             "autoResize"    "0"
             "pinCorner"     "3"
-            "visible"       "0"
+            "visible"       "1"
             "enabled"       "1"
             "tabPosition"   "0"
             "labelText"     ""
@@ -1184,11 +1050,6 @@
             "brighttext"    "0"
             "default"       "1"
             "Command"       "motd_next"
-            "actionsignallevel" "2"
-
-            "navUp"         "MOTD_CloseButton"
-            "navLeft"       "MOTD_URLButton"
-
             "sound_depressed"   "UI/buttonclick.wav"
             "sound_released"    "UI/buttonclickrelease.wav"
             "paintbackground" "0"
@@ -1211,26 +1072,131 @@
             }
         }
     }   
-
+    
+    "Notifications_ShowButtonPanel"
+    {
+        "ControlName"   "EditablePanel"
+        "fieldName"     "Notifications_ShowButtonPanel"
+        "xpos"          "c-15"
+        "ypos"          "385"
+        "zpos"          "1"
+        "wide"          "36"
+        "tall"          "36"
+        "autoResize"    "0"
+        "pinCorner"     "3"
+        "visible"       "1"
+        "enabled"       "1"
+        
+        "SubImage"
+        {
+            "ControlName"   "ImagePanel"
+            "fieldName"     "SubImage"
+            "xpos"          "9999"
+            "ypos"          "9999"
+            "zpos"          "3"
+            "wide"          "12"
+            "tall"          "12"
+            "visible"       "1"
+            "enabled"       "1"
+            "image"         "glyph_achievements"
+            "scaleImage"    "1"
+            "drawcolor" "255 255 255 255"
+        }               
+        
+        "Notifications_CountLabel"
+        {
+            "ControlName"   "CExLabel"
+            "fieldName"     "Notifications_CountLabel"
+            "font"          "CerbeticaBold16"
+            "labelText"     "%noticount%"
+            "textAlignment" "center"
+            "xpos"          "12"
+            "ypos"          "-4"
+            "zpos"          "4"
+            "wide"          "16"
+            "tall"          "16"
+            "autoResize"    "0"
+            "pinCorner"     "0"
+            "visible"       "1"
+            "enabled"       "1"
+            "fgcolor_override"  "Base Color"
+        }
+        "Notifications_CountLabelBG"
+        {
+            "ControlName"   "CExLabel"
+            "fieldName"     "Notifications_CountLabelBG"
+            "font"          "CerbeticaBold16"
+            "labelText"     "%noticount%"
+            "textAlignment" "center"
+            "xpos"          "13"
+            "ypos"          "-3"
+            "zpos"          "4"
+            "wide"          "16"
+            "tall"          "16"
+            "autoResize"    "0"
+            "pinCorner"     "0"
+            "visible"       "1"
+            "enabled"       "1"
+            "fgcolor_override"  "0 0 0 255"
+        }
+    
+        "Notifications_ShowButtonPanel_SB"
+        {
+            "ControlName"   "CExImageButton"
+            "fieldName"     "Notifications_ShowButtonPanel_SB"
+            "xpos"          "0"
+            "ypos"          "0"
+            "zpos"          "1"
+            "wide"          "20"
+            "tall"          "20"
+            "autoResize"    "0"
+            "pinCorner"     "3"
+            "visible"       "1"
+            "enabled"       "1"
+            "tabPosition"   "0"
+            "labelText"     ""
+            "font"          "CerbeticaBold12"
+            "textAlignment" "center"
+            "dulltext"      "0"
+            "brighttext"    "0"
+            "default"       "1"
+            "Command"       "noti_show"
+            "sound_depressed"   "UI/buttonclick.wav"
+            "sound_released"    "UI/buttonclickrelease.wav"
+            "paintbackground" "0"
+            "image_drawcolor"   "235 226 202 255"
+            "image_armedcolor"  "255 255 255 255"
+            
+            "SubImage"
+            {
+                "ControlName"   "ImagePanel"
+                "fieldName"     "SubImage"
+                "xpos"          "0"
+                "ypos"          "0"
+                "zpos"          "1"
+                "wide"          "20"
+                "tall"          "20"
+                "visible"       "1"
+                "enabled"       "1"
+                "image"         "button_Alert"
+                "scaleImage"    "1"
+            }
+        }
+    }
+    
     "Notifications_Panel"
     {
         "ControlName"   "EditablePanel"
         "fieldName"     "Notifications_Panel"
         "xpos"          "c0"
         "ypos"          "102"
-        "zpos"          "10"
+        "zpos"          "1"
         "wide"          "210"
         "tall"          "80"
         "visible"       "0"
         "PaintBackgroundType"   "2"
         "paintbackground"   "0"
         "border"        "MainMenuHighlightBorder"
-
-        "navUp"         "MOTD_ShowButtonPanel"
-        "navDown"       "SettingsButton"
-        "navLeft"       "Notifications_ShowButtonPanel"
-        "navRight"      "MOTD_ShowButtonPanel"
-        "navToRelay"    "Notifications_CloseButton"
         
         "Notifications_CloseButton"
         {
@@ -1252,22 +1218,18 @@
             "dulltext"      "0"
             "brighttext"    "0"
             "default"       "0"
-            "actionsignallevel" "2"
-
-            "Command"       "noti_hide"
-            "navActivate"   "<QuickplayButton"
-
             "sound_depressed"   "UI/buttonclick.wav"
             "sound_released"    "UI/buttonclickrelease.wav"
-
+            "Command"       "noti_hide"
+            
             "paintbackground"   "0"
             
-            "defaultFgColor_override" "46 43 42 255"
-            "armedFgColor_override" "235 226 202 255"
-            "depressedFgColor_override" "46 43 42 255"
+            "defaultFgColor_override" "TanLight"
+            "armedFgColor_override" "Button Color"
+            "depressedFgColor_override" "Button Color"
             
-            "image_drawcolor"   "117 107 94 255"
-            "image_armedcolor"  "200 80 60 255"
+            "image_drawcolor"   "TanLight"
+            "image_armedcolor"  "Button Color"
             "SubImage"
             {
                 "ControlName"   "ImagePanel"
@@ -1299,7 +1261,7 @@
             "pinCorner"     "0"
             "visible"       "1"
             "enabled"       "1"
-            "fgcolor"       "LabelDark"
+            "fgcolor_override"  "46 43 42 255"
             "wrap"          "1"
         }
         
@@ -1325,7 +1287,7 @@
                 "visible"       "1"
             }
         }
-    } 
+    }   
     
     "HTMLContainer"
     {
@@ -1937,7 +1899,7 @@
             "use_proportional_insets" "1"
             "font"          "CerbeticaBold8"
             "textAlignment" "center"
-            "labelText"     "August 10"
+            "labelText"     "May 24"
             "dulltext"      "0"
             "brighttext"    "0"
             "default"       "1"
@@ -1999,7 +1961,7 @@
             "use_proportional_insets" "1"
             "font"          "CerbeticaBold12"
             "textAlignment" "center"
-            "labelText"     "v28 - heroes never die"
+            "labelText"     "v27 - an update"
             "dulltext"      "0"
             "brighttext"    "0"
             "default"       "1"
@@ -2011,9 +1973,9 @@
             "border_armed"      ""
             "paintbackground"   "0"
             
-            "defaultFgColor_override" "255 219 105 255"
-            "armedFgColor_override" "255 219 105 255"
-            "depressedFgColor_override" "255 219 105 255"
+            "defaultFgColor_override" "Button Color"
+            "armedFgColor_override" "Button Color"
+            "depressedFgColor_override" "Button Color"
             
             "image_drawcolor"   "117 107 94 255"
             "image_armedcolor"  "235 226 202 255"
@@ -2259,13 +2221,25 @@
             "border_armed"      ""
             "paintbackground"   "0"
             
-            "defaultFgColor_override" "TanLight"
-            "armedFgColor_override" "Button Color"
-            "depressedFgColor_override" "Button Color"
+            "defaultFgColor_override" "TanDark"
+            "armedFgColor_override" "TanDark"
+            "depressedFgColor_override" "TanDark"
             
-            "image_drawcolor"   "235 226 202 255"
+            "image_drawcolor"   "117 107 94 255"
             "image_armedcolor"  "235 226 202 255"
             
+            if_competitive
+            {
+                "defaultFgColor_override"   "Heal Numbers"
+                "armedFgColor_override"     "Button Color"
+                "depressedFgColor_override" "Button Color"
+            }
+            if_competitive_stress_event
+            {
+                "defaultFgColor_override"   "Damage Numbers"
+                "armedFgColor_override"     "Button Color"
+                "depressedFgColor_override" "Button Color"
+            }
 
             "SubImage"
             {
