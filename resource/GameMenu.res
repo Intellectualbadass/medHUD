@@ -3,8 +3,8 @@
 
     "QuickplayButton"
     {
-        "label" "Quickplay" 
-        "command" "quickplay"
+        "label" "Casual" 
+        "command" "play_casual"
         "subimage" ""
         "OnlyAtMenu" "1"
     }
@@ -18,14 +18,14 @@
     "PlayPVEButton"
     {
         "label" "MvM" 
-        "command" "playpve"
+        "command" "play_mvm"
         "subimage" ""
         "OnlyAtMenu" "1"
     }
     "PlayCompButton"
     {
         "label" "Matchmaking" 
-        "command" "ladder_ui_show"
+        "command" "play_competitive"
         "subimage" "glyph_practice"
         "OnlyAtMenu" "1"
     }
